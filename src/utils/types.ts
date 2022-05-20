@@ -18,3 +18,14 @@ export interface ProjetoProps {
 export interface ProjetosProps {
   projetos: IProjeto[];
 }
+
+export interface IExpereriencia {
+  slug: string;
+  end_date: string;
+  title: string;
+  description: string;
+}
+
+export interface ExpererienciasProps {
+  experiencias: IExpereriencia[];
+}

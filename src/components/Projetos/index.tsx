@@ -10,7 +10,7 @@ function Projetos({ projetos }: ProjetosProps) {
       <SectionTitle title="Ultimos Projetos" />
 
       <section>
-        {projetos?.map(projeto => (
+        {projetos?.slice(0, 3).map(projeto => (
           <ProjetoItem
             key={projeto.slug}
             img={projeto.thumbnail}
